@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<script type="text/javascript">
+  function calculate() {
+    'use strict';
+    let fieldFirst = document.getElementById('firstDigit').value;
+    let fieldSecond = document.getElementById('secondDigit').value;
+
+    let result = parseFloat(fieldFirst) + parseFloat(fieldSecond);
+
+    if (!isNaN(result)) {
+      prompt('Результат', result);
+    }
+  }
+
+</script>
+<body>
+  <form class="" action="index.html" method="post">
+    Первое число <br><input type="text" id="firstDigit" value="0.1"><br>
+    Второе число <br><input type="text" id="secondDigit" value="0.2"> <br>
+
+    <input type="button" onclick="calculate()" value="Сложить">
+  </form>
+
+</body>
+
+</html>
