@@ -15,7 +15,7 @@
     let result = parseFloat(fieldFirst) + parseFloat(fieldSecond);
 
     if (!isNaN(result)) {
-      prompt('Результат', result);
+      prompt('Результат', +result.toFixed(10));
     }
   }
 
